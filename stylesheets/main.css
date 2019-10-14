@@ -1,4 +1,16 @@
 body {
 	background-color: rgba(20, 15, 15, 1.0);
-	font-color: #fff;
+	color: #ffffff;
+}
+
+a {
+	color: #cccccc;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+img {
+	max-width: 300px;
 }
