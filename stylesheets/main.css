@@ -14,3 +14,17 @@ a:hover {
 img {
 	max-width: 300px;
 }
+
+h2 {
+	margin-top: 50px;
+}
+
+h3 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-top: 5px;	
+	margin-bottom: 5px;
+}
