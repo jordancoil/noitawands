@@ -1,6 +1,8 @@
 body {
 	background-color: rgba(20, 15, 15, 1.0);
 	color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 a {
@@ -16,7 +18,7 @@ img {
 }
 
 h2 {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 h3 {
@@ -27,4 +29,8 @@ h3 {
 p {
 	margin-top: 5px;	
 	margin-bottom: 5px;
+}
+
+.nav-tabs {
+	margin-top: 40px;
 }
