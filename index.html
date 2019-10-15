@@ -33,7 +33,10 @@
         <a class="nav-link active" id="basics-tab" data-toggle="tab" href="#basics" role="tab" aria-controls="basics" aria-selected="true">Wand Basics</a>
       </li>
       <li class="nav-item">
-	      <a class="nav-link" id="perks-tab" data-toggle="tab" href="#perks" role="tab" aria-controls="perks" aria-selected="false">Wand Related Perks</a>
+	<a class="nav-link" id="perks-tab" data-toggle="tab" href="#perks" role="tab" aria-controls="perks" aria-selected="false">Wand Related Perks</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" id="modify-tab" data-toggle="tab" href="#modify" role="tab" aria-controls="modify" aria-selected="false">Modifying Wands</a>
       </li>
     </ul>
 
@@ -42,9 +45,9 @@
 
         <h2>Wand Basics</h2>
         <h3>Shuffle</h3>
-        <p>If <strong>Yes</strong>, the wand will pick a spell slot at random to fire. 
-        If <strong>No</strong>, the wand will fire the spell slots in order.</p>
-        <p><i>Note: In general, you will wnat wands with shuffle set to <strong>no</strong> if you are using spell modifiers.</i></p>
+        <p>If <strong>Yes</strong>, the wand will randomize the spell slots and fire them in that order before recharging and randomizing again. 
+        If <strong>No</strong>, the wand will fire the spell slots in order.
+        <p><i>Note: In general, you will want wands with shuffle set to <strong>no</strong> if you are using spell modifiers.</i></p>
         <h3>Spells/Cast</h3>
         <p>This will be the number of spell slots that are cast with each click of the mouse. 
         A wand with a Spells/Cast of 2 will cast 2 spells every click.</p>
@@ -77,6 +80,17 @@
           </li>
         </ul>
 
+      </div>
+      <div class="tab-pane fade" id="modify" role="tabpanel" aria-labelledby="modify-tab">
+         
+        <h2>Modifying Wands</h2>
+        <p>Modfying wands is probably one of the most crucial aspects of this game, but also one of the hardest to get right.
+        This section will detail a few things to keep in mind while modifying your wands.</p>
+        <p>To apply a modifier to multiple projectiles you must place the modifer before a multicast or a splitter. 
+        Think of the spell slots like a mathematical expression, a multicast or splitter acts as brackets wrappinng around a number of spells.
+        Any modifier placed before that "bracket" will modify everything inside. See the below image for reference <br/>
+        <i>Credit to Teyru on the Noita discord for the explanation, and an anonymous /v/ poster for the image.</i></p>
+        <img src="assets/multicast.png" />
       </div>
     </div>
   
