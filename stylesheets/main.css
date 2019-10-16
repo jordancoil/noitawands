@@ -37,15 +37,27 @@ p {
 
 html { font-size: 1rem; }
 
-@media (min-width: 576px) {
-    html { font-size: 1rem; }
+/* for-phone-only */
+@media (max-width: 599px) {
+	html { font-size: 0.75rem; }
 }
-@media (min-width: 768px) {
-    html { font-size: 2.25rem; }
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+	html { font-size: 1rem; }
 }
-@media (min-width: 992px) {
-    html { font-size: 1rem; }
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) { 
+	html { font-size: 1rem; }
 }
+
+/* for-desktop-up */
 @media (min-width: 1200px) {
-    html { font-size: 1.25rem; }
+	html { font-size: 1rem; }
+}
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) {
+	html { font-size: 1.5rem; }
 }
