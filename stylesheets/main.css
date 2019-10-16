@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(20, 15, 15, 1.0);
+	background-color: rgb(65, 60, 60);
 	color: #ffffff;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -34,6 +34,29 @@ p {
 .nav-tabs {
 	margin-top: 40px;
 }
+
+#list-of-spells {
+	max-height: 400px;
+	overflow: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+/* SCROLLBAR FIX */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+/* END SCROLLBAR FIX */
+
+
+
 
 html { font-size: 1rem; }
 

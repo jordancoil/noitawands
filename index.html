@@ -170,9 +170,18 @@
       </div>
 
       <div class="tab-pane fade" id="simulator" role="tabpanel" aria-labelledby="simulator-tab">
-        <div id="list-of-spells">
+        <h2>Wand Simulator</h2>
+        <div class="row">
+          <div class="col-8">
+            <h3>Drag Spells Here</h3>
+          </div>
 
+          <div class="col-4">
+            <div id="list-of-spells"></div>  
+          </div>  
         </div>
+        
+        
       </div>
 
     </div> <!-- end tabs -->
@@ -207,10 +216,6 @@
           spellData = spells[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/); // Split by comma not within Double Quotes
           spellObject = {};
 
-          if (spellData[0] == "Lightning Bolt") {
-            debugger;
-          }
-
           for (var j = 0; j < spellData.length; j++) {
 
             spellObject[headers[j]] = spellData[j];
@@ -226,7 +231,11 @@
 
       function populateListOfSpells(spellsArray) {
         var listOfSpellsDiv = document.getElementById("list-of-spells");
+        var containerDiv = document.createElement("div");
+        var currentSpellType = "";
+
         for (var i = 0; i < spellsArray.length; i++) {
+
           var spellDiv = document.createElement("div");
           var spellImg = document.createElement("img")
           
@@ -237,8 +246,16 @@
           spellDiv.appendChild(spellImg);
           spellDiv.appendChild(spellName);
 
-          listOfSpellsDiv.appendChild(spellDiv);
+          if (spellsArray[i]["spell-type"] != currentSpellType) {
+            currentSpellType = spellsArray[i]["spell-type"];
+            var typeHeading = document.createElement("h4")
+            typeHeading.innerHTML = currentSpellType
+            containerDiv.appendChild(typeHeading);
+          }
+
+          containerDiv.appendChild(spellDiv);
         }
+        listOfSpellsDiv.appendChild(containerDiv);
       }
 
     });
