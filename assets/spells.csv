@@ -4,8 +4,7 @@ Magic Arrow,Projectile,inf,20,10,,0.6 DEG,625,,+0.07 s,,+1 DEG,+5%,,Spell_bullet
 Magic Bolt,Projectile,inf,30,13,,2.9 DEG,500,,+ 0.12 s,,+2 DEG,+5%,,Spell_heavy_bullet.png,
 Bouncing Burst,Projectile,inf,5,3,,0.6 DEG,700,,0.03 s,,,,,Spell_rubber_ball.png,
 Energy Sphere,Projectile,inf,20,Slice: 10,,0.6 DEG,450,,+0.17 s,,,,,Spell_bouncy_orb.png,
-Energy Orb,Projectile,inf,30,"Impact: 11 
- Explosion: 18",Explosion: 15,1.7 DEG,210,,+0.10 s,,+1 DEG,,,Spell_slow_bullet.png,
+Energy Orb,Projectile,inf,30,Impact: 11 Explosion: 18,Explosion: 15,1.7 DEG,210,,+0.10 s,,+1 DEG,,,Spell_slow_bullet.png,
 Bubble Spark,Projectile,inf,5,5,,22.9 DEG,250,,,,,,,Spell_bubbleshot.png,
 Spitter Bolt,Projectile,inf,5,8,,,500,,,,+4 DEG,,,Spell_spitter.png,
 Large Spitter Bolt,Projectile,inf,25,11,,,700,,,,+5 DEG,,,Spell_spitter_tier_2.png,
@@ -13,27 +12,18 @@ Giant Spitter Bolt,Projectile,inf,,,,,,,,,,,,Spell_spitter_tier_3.png,
 Summon Arrow,Projectile,inf,15,Slice: 5,,0.6 DEG,600,,+0.17 s,,10 DEG,,,Spell_arrow.png,Deals friendly fire.
 Summon Disc Projectile,Projectile,inf,20,Slice: 20,,0.6 DEG,400,,+0.17 s,,+1 DEG,,,Spell_disc_bullet.png,Deals friendly fire.
 Glowing Lance,Projectile,inf,30,35,,0.2 DEG,350,,+0.33 s,,10 DEG,,Goes through soft materials,Spell_lance.png,
-Concentrated Light,Projectile,inf,30,"Impact: 10 
- Explosion: 22",Explosion: 3,,140,,0.37 s,,,,,Spell_laser.png,
+Concentrated Light,Projectile,inf,30,Impact: 10; Explosion: 22,Explosion: 3,,140,,0.37 s,,,,,Spell_laser.png,
 Burst of Air,Projectile,inf,5,6,,400,,,+0.05 s,,1 DEG,,Capable of greatly moving things,Spell_air_bullet.png,
 Firebomb,Projectile,inf,10,Fire: 10,,2.9 DEG,130,,,,,,,Spell_firebomb.png,
-Firebolt,Projectile,25,50,"Impact: 45 
- Explosion: 190",Explosion: 7,2.9 DEG,265,,+0.50 s,,,,,Spell_grenade.png,Has the ability to blow up chunks of soft Materials
-Large Firebolt,Projectile,25,90,"Impact: 70 
- Explosion: 240",Explosion: 25,2.9 DEG,265,,+0.83 s,,,,,Spell_grenade_tier_2.png,
-Giant Firebolt,Projectile,25,90,"Impact: 95 
- Explosion: 290",Explosion: 40,2.9 DEG,265,,+1.33 s,,,,,Spell_grenade_tier_3.png,
-Odd Firebolt,Projectile,25,50,"Impact: 45 
- Explosion: 190",Explosion: 7,2.9 DEG,265,,+0.50 s,,,,,Spell_grenade_anti.png,Has the ability to blow up chunks of soft Materials. Has its gravity inverted.
-Dropper Bolt,Projectile,25,80,"Impact: 95 
- Explosion: 390",Explosion: 16,2.9 DEG,65,,+0.67 s,,,,,Spell_grenade_large.png,Almost immediately drops down after casting
-Fireball,Projectile,15,70,"Explosion: 200 
- Fire: 6",Explosion: 15,,,,+0.83 s,,+2 DEG,,,Spell_fireball.png,
-Flamethrower,Projectile,60,20,"Explosion: 50 
- Fire: 11",Explosion: 50,,165,,,,+2 DEG,,,Spell_flamethrower.png,
+Firebolt,Projectile,25,50,Impact: 45; Explosion: 190,Explosion: 7,2.9 DEG,265,,+0.50 s,,,,,Spell_grenade.png,Has the ability to blow up chunks of soft Materials
+Large Firebolt,Projectile,25,90,Impact: 70 - Explosion: 240,Explosion: 25,2.9 DEG,265,,+0.83 s,,,,,Spell_grenade_tier_2.png,
+Giant Firebolt,Projectile,25,90,Impact: 95 - Explosion: 290,Explosion: 40,2.9 DEG,265,,+1.33 s,,,,,Spell_grenade_tier_3.png,
+Odd Firebolt,Projectile,25,50,Impact: 45 - Explosion: 190,Explosion: 7,2.9 DEG,265,,+0.50 s,,,,,Spell_grenade_anti.png,Has the ability to blow up chunks of soft Materials. Has its gravity inverted.
+Dropper Bolt,Projectile,25,80,Impact: 95 - Explosion: 390,Explosion: 16,2.9 DEG,65,,+0.67 s,,,,,Spell_grenade_large.png,Almost immediately drops down after casting
+Fireball,Projectile,15,70,Explosion: 200 - Fire: 6,Explosion: 15,,,,+0.83 s,,+2 DEG,,,Spell_fireball.png,
+Flamethrower,Projectile,60,20,Explosion: 50 - Fire: 11,Explosion: 50,,165,,,,+2 DEG,,,Spell_flamethrower.png,
 Meteor,Projectile,10,150,Explosion: 500 Fire: 56,Explosion: 45,,350,,,,,,,Spell_meteor.png,
-Slimeball,Projectile,inf,20,"Impact: 6 
- Explosion: 30",9,102,,,+0.17 s,,+2 DEG,,,Spell_slimeball.png,
+Slimeball,Projectile,inf,20,Impact: 6 - Explosion: 30,9,102,,,+0.17 s,,+2 DEG,,,Spell_slimeball.png,
 Acid Ball,Projectile,20,20,6,,,99,,+0.17 s,,,,,Spell_acidshot.png,
 Spiral Shot,Projectile,15,50,5,,110,,,+0.33 s,,,,,Spell_spiral_shot.png,
 Tentacle,Projectile,inf,20,,,,8,,+0.67 s,,,,,Spell_tentacle.png,"Deals damage by physically hitting enemies, grabs things"
@@ -48,20 +38,14 @@ Death Cross,Projectile,inf,80,Explosion: 300,Explosion: 25,,,,+0.67 s,,,,Explode
 Giga Death Cross,Projectile,8,150,Explosion: 400,Explosion: 25,,,,+1.17 s,,,,Explodes in a cross pattern,Spell_death_cross_big.png,Although it is classified as an explosion it has a projectile component that will go through Explosion Immunity.
 Lightning Bolt,Projectile,inf,70,Explosion: 500,Explosion: 35,,60,,+0.83 s,,,,"Electrifies liquids such as water, blood, etc. Causes the wand to emit sparks of electricity. Speed Up can actually increase the range.",Spell_lightning.png,"Electrifies liquids such as water, blood, etc. Causes the wand to emit sparks of electricity. Speed Up can actually increase the range."
 Thunder Charge,Projectile,3,120,Explosion: 180,Explosion: 50,,110,,+2.0 s,,,,,Spell_thunderball.png,
-Magic Missile,Projectile,10,70,"Impact: 75 
- Explosion: 419",Explosion: 15,,85,,+1.0 s,,,,,Spell_rocket.png,
-Large Magic Missile,Projectile,10,90,"Impact: 100 
- Explosion: 469",Explosion: 32,,85,,+1.50 s,,,,,Spell_rocket_tier_2.png,
-Giant Magic Missile,Projectile,10,120,"Impact: 125 
- Explosion: 520",Explosion: 42,,85,,+2.0s,,,,,Spell_rocket_tier_3.png,
-Nuke,Projectile,1,200,"Impact: 75 
- Explosion: 1000",Explosion: 250,0.6 DEG,300,,+0.33 s,+10.0 s,,,,Spell_nuke.png,Can destroy any Material
+Magic Missile,Projectile,10,70,Impact: 75 - Explosion: 419,Explosion: 15,,85,,+1.0 s,,,,,Spell_rocket.png,
+Large Magic Missile,Projectile,10,90,Impact: 100 - Explosion: 469,Explosion: 32,,85,,+1.50 s,,,,,Spell_rocket_tier_2.png,
+Giant Magic Missile,Projectile,10,120,Impact: 125 - Explosion: 520,Explosion: 42,,85,,+2.0s,,,,,Spell_rocket_tier_3.png,
+Nuke,Projectile,1,200,Impact: 75 - Explosion: 1000,Explosion: 250,0.6 DEG,300,,+0.33 s,+10.0 s,,,,Spell_nuke.png,Can destroy any Material
 Fireworks!,Projectile,20,70,Impact: 25 Explosion: 120,Explosion: 15,,75,,+1.0 s,,,,,Spell_fireworks.png,
-Digging Bolt,Projectile,inf,0,"8 
- Drill: 0",,,,,+0.02 s,0.17 s,,,,Spell_digger.png,Operates at melee range
+Digging Bolt,Projectile,inf,0,8 - Drill: 0,,,,,+0.02 s,0.17 s,,,,Spell_digger.png,Operates at melee range
 Digging Blast,Projectile,inf,0,Drill: 0,,,,,+0.02 s,0.17 s,,,,Spell_powerdigger.png,
-Chainsaw,Projectile,inf,0,"Impact: 13 
- Drill: 0",,,200,,,0.17 s,,,,Spell_chainsaw.png,Operates at melee range
+Chainsaw,Projectile,inf,0,Impact: 13 - Drill: 0,,,200,,,0.17 s,,,,Spell_chainsaw.png,Operates at melee range
 Black Hole,Projectile,3,180,,,,40,,+1.33 s,,,,,Spell_black_hole.png,
 Teleport Spell,Projectile,inf,40,,,,800,,+0.05 s,,1 DEG,,,Spell_teleport_projectile.png,
 Heal Projectile,Projectile,20,15,,,0.6 DEG,625,,+0.07 s,,+1 DEG,,,Spell_heal_bullet.png,

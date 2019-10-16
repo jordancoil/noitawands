@@ -199,13 +199,20 @@
 
       $.get(filename, function(data) {
         var jsonObject = data.split(/\r?\n|\r/);
-        var headers = jsonObject[0].split(',')
+        var headers = jsonObject[0].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
         var spells = jsonObject.slice(1)
         
         for (var i = 0; i < spells.length; i++) {
-          spellData = spells[i].split(',');
+          console.log(spells[i]);
+          spellData = spells[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/); // Split by comma not within Double Quotes
           spellObject = {};
+
+          if (spellData[0] == "Lightning Bolt") {
+            debugger;
+          }
+
           for (var j = 0; j < spellData.length; j++) {
+
             spellObject[headers[j]] = spellData[j];
           }
           spellsFromCSV.push(spellObject);
@@ -214,7 +221,7 @@
         populateListOfSpells(spellsFromCSV);
 
         // document.getElementById("csvData").innerHTML = spellsFromCSV[0].name
-        console.log(spellsFromCSV);
+        // console.log(spellsFromCSV);
       });
 
       function populateListOfSpells(spellsArray) {
