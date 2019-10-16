@@ -56,6 +56,9 @@
       <li class="nav-item">
         <a class="nav-link" id="examples-tab" data-toggle="tab" href="#examples" role="tab" aria-controls="examples" aria-selected="false">Casting Examples</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" id="simulator-tab" data-toggle="tab" href="#simulator" role="tab" aria-controls="simulator" aria-selected="false">Wand Simulator</a>
+      </li>
     </ul>
 
     <div class="tab-content">
@@ -165,10 +168,14 @@
             </ul>
         </ol>
       </div>
-    </div>
 
-    <div id="csvData">
-    </div>
+      <div class="tab-pane fade" id="simulator" role="tabpanel" aria-labelledby="simulator-tab">
+        <div id="list-of-spells">
+
+        </div>
+      </div>
+
+    </div> <!-- end tabs -->
 
     <div class="footer mt-5">
       <a href="privacy.html">Privacy Policy</a>
@@ -204,9 +211,28 @@
           spellsFromCSV.push(spellObject);
         }
 
+        populateListOfSpells(spellsFromCSV);
+
         // document.getElementById("csvData").innerHTML = spellsFromCSV[0].name
         console.log(spellsFromCSV);
       });
+
+      function populateListOfSpells(spellsArray) {
+        var listOfSpellsDiv = document.getElementById("list-of-spells");
+        for (var i = 0; i < spellsArray.length; i++) {
+          var spellDiv = document.createElement("div");
+          var spellImg = document.createElement("img")
+          
+
+          spellImg.setAttribute("src", "assets/spell-images/" + spellsArray[i].img);
+          var spellName = document.createTextNode(spellsArray[i].name);
+
+          spellDiv.appendChild(spellImg);
+          spellDiv.appendChild(spellName);
+
+          listOfSpellsDiv.appendChild(spellDiv);
+        }
+      }
 
     });
   </script>
